@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>July 23, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>July 24, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,7 @@
     <h2>What's new <span class="badge new">July 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Jul 24</div><p><span class="badge surf">Models</span> <b>Claude Opus 5</b> <span class="d">— a step up from Opus 4.8 at the same $5/$25 per MTok pricing, with a 1M-token context window (default and max), 128k max output, and thinking on by default. It's the new default model on Claude Max and the strongest model available on Claude Pro, and ships as Claude Code's new default Opus model too. Also on the API, Bedrock, Google Cloud, and Microsoft Foundry.</span> <a class="src" href="https://www.anthropic.com/news/claude-opus-5" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 23</div><p><span class="badge surf">App</span> <b>Voice mode gets Opus &amp; Sonnet</b> <span class="d">— voice mode no longer runs on Haiku alone: switch to Sonnet or Opus mid-conversation for deeper, more capable answers, now across desktop, mobile, and web. It can also pull context from connected apps like Gmail and Slack.</span> <a class="src" href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 22</div><p><span class="badge surf">Connectors</span> <b>Anthropic Economic Index connector</b> <span class="d">— explore Anthropic's own data on how AI is used across the economy right from a chat, e.g. "which occupations use AI the most?" Works with any Claude model, nothing to install.</span> <a class="src" href="https://www.anthropic.com/news/anthropic-economic-index-connector" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 21</div><p><span class="badge surf">App</span> <b>Record a skill in Cowork</b> <span class="d">— announced on X: record your screen while you do a task and talk through it, and Claude turns it into a reusable skill. Find it under "Record a skill" in the + menu of the Claude desktop app. Pro, Max, and Team plans.</span> <a class="src" href="https://x.com/claudeai/status/2079595988998554047" rel="noopener">source ↗</a></p></div>
@@ -287,7 +288,6 @@
       <div class="wn-item"><div class="wn-date">Jul 17</div><p><span class="badge surf">Code</span> <b>Claude Code Week 29</b> <span class="d">— screen reader mode for VoiceOver/NVDA users, <code>/fork</code> copies your conversation into a background session, and auto mode works on Bedrock, Vertex, and Foundry without an opt-in flag.</span> <a class="src" href="https://code.claude.com/docs/en/whats-new" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 14</div><p><span class="badge surf">App</span> <b>Claude for Teachers</b> <span class="d">— verified US K-12 educators get free access to premium Claude tools, a library of teaching skills, and standards-aligned curricula for all 50 states.</span> <a class="src" href="https://www.anthropic.com/news" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 14</div><p><span class="badge surf">Admin</span> <b>HIPAA self-serve setup</b> <span class="d">— Enterprise and API org admins can review the BAA and enable HIPAA readiness themselves, in one flow (one-way switch, admin-only).</span> <a class="src" href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Jul 09</div><p><span class="badge surf">App</span> <b>Claude Reflect (beta)</b> <span class="d">— a dashboard showing your monthly recap and usage patterns, plus new break reminders and quiet-hours settings. Web &amp; desktop, with Memory on.</span> <a class="src" href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -433,7 +433,7 @@
       <div class="tablewrap"><table class="cmdtable">
         <thead><tr><th>Command</th><th>What it does</th></tr></thead>
         <tbody>
-          <tr><td><code>/model</code></td><td>Switch models (Sonnet 5, Opus 4.8, Fable 5…) and save your default; press <kbd>s</kbd> to switch for this session only</td></tr>
+          <tr><td><code>/model</code></td><td>Switch models (Sonnet 5, Opus 5, Fable 5…) and save your default; press <kbd>s</kbd> to switch for this session only</td></tr>
           <tr><td><code>/effort</code></td><td>Reasoning depth from <code>low</code> to <code>max</code> — <code>xhigh</code> is the go-to for hard problems; <code>ultracode</code> adds automatic workflow orchestration</td></tr>
           <tr><td><code>/fast</code></td><td>Toggle fast mode: same intelligence tier, faster output</td></tr>
           <tr><td><code>/advisor</code> <span class="badge gem">Gem</span></td><td>Have a second model quietly consulted for guidance at key moments during a task</td></tr>
@@ -603,7 +603,7 @@
     <p class="lead">Five minutes in settings makes Claude noticeably better for you.</p>
     <div class="grid">
       <div class="card"><h3>Pick your model</h3>
-        <p>Sonnet 5 (default on Pro) balances speed and power with a 1M-token context. Opus 4.8 and the Claude 5 family are there for the hardest work on higher plans.</p>
+        <p>Sonnet 5 (default on Pro) balances speed and power with a 1M-token context. Opus 5 (default on Max) and the rest of the Claude 5 family are there for the hardest work on higher plans.</p>
         <div class="how"><b>How:</b> Model picker at the top of any chat.</div></div>
       <div class="card"><h3>Turn on (and curate) memory</h3>
         <p>Memory makes every conversation smarter — and it's fully inspectable. Review what Claude knows and delete anything you'd rather it forget.</p>
@@ -691,7 +691,7 @@
     <div class="plans">
       <div class="plan"><h3>Free</h3><ul><li>Chat with Claude</li><li>Artifacts, uploads, search</li><li>Limited daily usage</li></ul></div>
       <div class="plan"><h3>Pro</h3><ul><li>Sonnet 5 by default</li><li>Projects, Research, Skills</li><li>Claude Code + auto mode</li><li>More usage</li></ul></div>
-      <div class="plan"><h3>Max</h3><ul><li>Everything in Pro, 5–20× usage</li><li>Opus 4.8 &amp; Claude 5 family</li><li>Cowork beta, fast mode</li><li>Priority access to new features</li></ul></div>
+      <div class="plan"><h3>Max</h3><ul><li>Everything in Pro, 5–20× usage</li><li>Opus 5 by default &amp; Claude 5 family</li><li>Cowork beta, fast mode</li><li>Priority access to new features</li></ul></div>
       <div class="plan"><h3>Team</h3><ul><li>Shared projects &amp; billing</li><li>Claude Tag for Slack</li><li>Central admin controls</li></ul></div>
       <div class="plan"><h3>Enterprise</h3><ul><li>SSO, roles, compliance API</li><li>Model entitlements</li><li>Trusted Devices, HIPAA setup</li></ul></div>
     </div>
@@ -709,7 +709,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated July 23, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated July 24, 2026</p>
 </footer>
 
 <script>
