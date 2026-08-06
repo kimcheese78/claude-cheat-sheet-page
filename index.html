@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>August 4, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>August 6, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,8 @@
     <h2>What's new <span class="badge new">August 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Aug 6</div><p><span class="badge surf">Code</span> <b><code>/review</code> becomes an alias of <code>/code-review</code></b> <span class="d">— typing <code>/review</code> now runs a full <code>/code-review</code> pass on the current diff, or on a PR with <code>/code-review &lt;level&gt; &lt;PR#&gt;</code>. Skip the effort level and it reuses whichever you typed last.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Aug 5</div><p><span class="badge surf">Admin</span> <b>Inference hooks bring inline DLP to Claude Enterprise</b> <span class="d">— a new beta routes prompts through your own security server for a real-time allow/deny check before Claude ever sees them, across chat, Claude Code, and Cowork. Works with existing DLP tools like Netskope, Palo Alto Networks, Zscaler, and Proofpoint.</span> <a class="src" href="https://claude.com/blog/claude-enterprise-inference-hooks" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 4</div><p><span class="badge surf">Code</span> <b>Focus view hides the tool noise</b> <span class="d">— a new chat-menu toggle collapses tool activity behind an expandable per-turn summary with a live running-tool indicator, so the transcript reads clean. Toggle with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> or "Claude Code: Toggle Focus view". VS Code extension.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 4</div><p><span class="badge surf">Code</span> <b>Ultraplan has been removed</b> <span class="d">— the cloud plan-drafting feature (draft a plan in the cloud, review it in a web editor, run it remotely or locally) is gone from Claude Code. For cloud-side work, Routines on claude.ai/code and <code>/code-review ultra</code> are still there.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 28</div><p><span class="badge surf">Connectors</span> <b>MCP gets its biggest upgrade yet</b> <span class="d">— the open protocol behind Claude's connectors moves to a simpler, stateless design that's easier for developers to scale, adds sturdier sign-in support for company identity systems, and introduces private network tunnels so teams can connect internal tools to Claude without exposing them to the internet.</span> <a class="src" href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Jul 22</div><p><span class="badge surf">Connectors</span> <b>Anthropic Economic Index connector</b> <span class="d">— explore Anthropic's own data on how AI is used across the economy right from a chat, e.g. "which occupations use AI the most?" Works with any Claude model, nothing to install.</span> <a class="src" href="https://www.anthropic.com/news/anthropic-economic-index-connector" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 21</div><p><span class="badge surf">App</span> <b>Record a skill in Cowork</b> <span class="d">— announced on X: record your screen while you do a task and talk through it, and Claude turns it into a reusable skill. Find it under "Record a skill" in the + menu of the Claude desktop app. Pro, Max, and Team plans.</span> <a class="src" href="https://x.com/claudeai/status/2079595988998554047" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 20</div><p><span class="badge surf">Models</span> <b>Fable 5 joins Max &amp; Team Premium for good</b> <span class="d">— no more on-again, off-again: Max plans and Team Premium seats get Fable 5 as a standard part of the plan, up to 50% of weekly usage at no extra cost. Pro and Team Standard move to pay-as-you-go usage credits, with a one-time $100 credit.</span> <a class="src" href="https://support.claude.com/en/articles/15424964-claude-fable-5-on-your-plan" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Jul 18</div><p><span class="badge surf">Code</span> <b>Claude Code weekly limits stay 50% higher</b> <span class="d">— announced on X: the higher weekly usage limits for Pro, Max, Team, and seat-based Enterprise users are extended again, now through August 19.</span> <a class="src" href="https://x.com/ClaudeDevs/status/2078511173759324328" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Jul 17</div><p><span class="badge surf">App</span> <b>Artifacts can use your connectors</b> <span class="d">— a published artifact can pull live data and take actions through each viewer&#8217;s own MCP connectors, and artifacts gain public sharing links plus editor roles on Team/Enterprise.</span> <a class="src" href="https://code.claude.com/docs/en/whats-new" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -367,7 +367,7 @@
       <div class="card"><h3>CLAUDE.md — project memory</h3>
         <p>A markdown file Claude reads at the start of every session: build commands, conventions, warnings. The single highest-leverage customization.</p>
         <div class="how"><b>How:</b> <code>/init</code> creates one. Press <code>#</code> during a session to quickly save a note to memory. Edit anytime with <code>/memory</code>.</div></div>
-      <div class="card"><h3>Auto mode <span class="badge new">2026</span></h3>
+      <div class="card"><h3>Auto mode</h3>
         <p>The middle ground between approving every action and skipping all permissions: a safety classifier lets safe actions run uninterrupted and blocks risky ones.</p>
         <div class="how"><b>How:</b> Cycle permission modes with <kbd>Shift</kbd>+<kbd>Tab</kbd>, or manage rules in <code>/permissions</code>. Available on Pro and up.</div></div>
       <div class="card"><h3>Effort levels &amp; fast mode</h3>
@@ -484,8 +484,8 @@
         <thead><tr><th>Command</th><th>What it does</th></tr></thead>
         <tbody>
           <tr><td><code>/diff</code></td><td>Interactive diff viewer: browse uncommitted changes and per-turn diffs</td></tr>
-          <tr><td><code>/code-review</code> <span class="badge kind">Skill</span></td><td>Review the diff for bugs and cleanups at a chosen effort level; <code>--fix</code> applies findings, <code>ultra</code> runs a deep multi-agent cloud review (<code>/ultrareview</code> is the old alias)</td></tr>
-          <tr><td><code>/review [PR]</code></td><td>Fast single-pass, read-only review of a GitHub pull request</td></tr>
+          <tr><td><code>/code-review</code> <span class="badge kind">Skill</span></td><td>Review the diff for bugs and cleanups at a chosen effort level; <code>--fix</code> applies findings, <code>ultra</code> runs a deep multi-agent cloud review (<code>/ultrareview</code> is the old alias). No level given? It reuses whichever you typed last</td></tr>
+          <tr><td><code>/review [PR]</code></td><td>Alias of <code>/code-review</code> — reviews the current diff, or a PR with <code>/code-review &lt;level&gt; &lt;PR#&gt;</code></td></tr>
           <tr><td><code>/simplify</code> <span class="badge kind">Skill</span></td><td>Cleanup-only review — four parallel agents hunt for reuse, simplification, and efficiency wins, then apply them</td></tr>
           <tr><td><code>/security-review</code></td><td>Scan pending changes for vulnerabilities: injection, auth issues, data exposure</td></tr>
           <tr><td><code>/verify</code> / <code>/run</code> <span class="badge kind">Skill</span></td><td>Actually launch your app and watch the change work — not just pass tests. <code>/run-skill-generator</code> teaches them your project's launch steps</td></tr>
@@ -709,7 +709,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 4, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 6, 2026</p>
 </footer>
 
 <script>
