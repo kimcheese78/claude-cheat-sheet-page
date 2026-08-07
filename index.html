@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>August 6, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>August 7, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,8 @@
     <h2>What's new <span class="badge new">August 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Aug 7</div><p><span class="badge surf">Code</span> <b>Claude Code sessions can message each other</b> <span class="d">— a new <code>SendMessage</code> tool lets sessions on any of your machines send each other messages, with <code>ListAgents</code> to find who's around. Messages to a bypassed-permissions session hold for your approval first. macOS and Linux.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Aug 7</div><p><span class="badge surf">Admin</span> <b>Run Claude Code on your own infrastructure</b> <span class="d">— <code>claude self-hosted-runner</code> turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 6</div><p><span class="badge surf">Code</span> <b><code>/review</code> becomes an alias of <code>/code-review</code></b> <span class="d">— typing <code>/review</code> now runs a full <code>/code-review</code> pass on the current diff, or on a PR with <code>/code-review &lt;level&gt; &lt;PR#&gt;</code>. Skip the effort level and it reuses whichever you typed last.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 5</div><p><span class="badge surf">Admin</span> <b>Inference hooks bring inline DLP to Claude Enterprise</b> <span class="d">— a new beta routes prompts through your own security server for a real-time allow/deny check before Claude ever sees them, across chat, Claude Code, and Cowork. Works with existing DLP tools like Netskope, Palo Alto Networks, Zscaler, and Proofpoint.</span> <a class="src" href="https://claude.com/blog/claude-enterprise-inference-hooks" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 4</div><p><span class="badge surf">Code</span> <b>Focus view hides the tool noise</b> <span class="d">— a new chat-menu toggle collapses tool activity behind an expandable per-turn summary with a live running-tool indicator, so the transcript reads clean. Toggle with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> or "Claude Code: Toggle Focus view". VS Code extension.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Jul 24</div><p><span class="badge surf">Models</span> <b>Claude Opus 5</b> <span class="d">— a step up from Opus 4.8 at the same $5/$25 per MTok pricing, with a 1M-token context window (default and max), 128k max output, and thinking on by default. It's the new default model on Claude Max and the strongest model available on Claude Pro, and ships as Claude Code's new default Opus model too. Also on the API, Bedrock, Google Cloud, and Microsoft Foundry.</span> <a class="src" href="https://www.anthropic.com/news/claude-opus-5" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 23</div><p><span class="badge surf">App</span> <b>Voice mode gets Opus &amp; Sonnet</b> <span class="d">— voice mode no longer runs on Haiku alone: switch to Sonnet or Opus mid-conversation for deeper, more capable answers, now across desktop, mobile, and web. It can also pull context from connected apps like Gmail and Slack.</span> <a class="src" href="https://support.claude.com/en/articles/11101966-use-voice-mode" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Jul 22</div><p><span class="badge surf">Connectors</span> <b>Anthropic Economic Index connector</b> <span class="d">— explore Anthropic's own data on how AI is used across the economy right from a chat, e.g. "which occupations use AI the most?" Works with any Claude model, nothing to install.</span> <a class="src" href="https://www.anthropic.com/news/anthropic-economic-index-connector" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Jul 21</div><p><span class="badge surf">App</span> <b>Record a skill in Cowork</b> <span class="d">— announced on X: record your screen while you do a task and talk through it, and Claude turns it into a reusable skill. Find it under "Record a skill" in the + menu of the Claude desktop app. Pro, Max, and Team plans.</span> <a class="src" href="https://x.com/claudeai/status/2079595988998554047" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Jul 20</div><p><span class="badge surf">Models</span> <b>Fable 5 joins Max &amp; Team Premium for good</b> <span class="d">— no more on-again, off-again: Max plans and Team Premium seats get Fable 5 as a standard part of the plan, up to 50% of weekly usage at no extra cost. Pro and Team Standard move to pay-as-you-go usage credits, with a one-time $100 credit.</span> <a class="src" href="https://support.claude.com/en/articles/15424964-claude-fable-5-on-your-plan" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -374,8 +374,8 @@
         <p>Dial how hard the model thinks: higher effort for gnarly problems, fast mode for quick output at lower cost.</p>
         <div class="how"><b>How:</b> <code>/effort xhigh</code> for the hardest tasks; <code>/fast on</code> for speed; <code>/model</code> to switch models.</div></div>
       <div class="card"><h3>Subagents &amp; background sessions</h3>
-        <p>Claude can spawn specialized agents that run in the background (they can even spawn their own). Your session keeps moving while they work.</p>
-        <div class="how"><b>How:</b> <code>/agents</code> to create custom agents; <code>claude agents</code> shows every session — running, blocked, done.</div></div>
+        <p>Claude can spawn specialized agents that run in the background (they can even spawn their own). Your session keeps moving while they work, and sessions on different machines can now message each other directly.</p>
+        <div class="how"><b>How:</b> <code>/agents</code> to create custom agents; <code>claude agents</code> shows every session — running, blocked, done. <code>SendMessage</code>/<code>ListAgents</code> tools let sessions reach each other (macOS/Linux).</div></div>
       <div class="card"><h3>Hooks, MCP &amp; plugins</h3>
         <p>Deep customization: hooks run your scripts on tool events, MCP servers connect external tools, plugins bundle it all for your team.</p>
         <div class="how"><b>How:</b> <code>/hooks</code>, <code>/mcp</code> (or <code>claude mcp login</code> from your shell), <code>/plugin</code> to browse &amp; install plugins.</div></div>
@@ -709,7 +709,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 6, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 7, 2026</p>
 </footer>
 
 <script>
