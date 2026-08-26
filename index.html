@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>August 22, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>August 26, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,8 @@
     <h2>What's new <span class="badge new">August 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Aug 25</div><p><span class="badge surf">App</span> <b>Claude's memory now works across chat and Cowork — and you control what's in it</b> <span class="d">— what Claude remembers from your chats now carries into Cowork tasks too, and vice versa, so handing off a task starts from what it already knows about you. Memory updates live as a conversation happens instead of only after it ends, and Claude skips storing sensitive topics (health, race, religion, politics, and similar) by default unless you turn that on in Memory settings.</span> <a class="src" href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Aug 25</div><p><span class="badge surf">Code</span> <b>/permissions gets an Auto mode tab</b> <span class="d">— view and edit the classifier rules that decide what auto mode allows or blocks, right from <code>/permissions</code>, instead of hand-editing config.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 21</div><p><span class="badge surf">Admin</span> <b>Claude Security scans now run on Claude Mythos 5</b> <span class="d">— Claude Enterprise customers get Anthropic's most capable security model for vulnerability scanning, in public beta, with no separate model access needed. Findings come back classified by CWE, severity, and confidence, with suggested fixes.</span> <a class="src" href="https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 21</div><p><span class="badge surf">Code</span> <b>The usage-limit message now shows your next reset time</b> <span class="d">— when your monthly spend limit is already used up, Claude Code's usage-limit message also tells you when your session or weekly limit resets, so you know when to check back.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 20</div><p><span class="badge surf">Code</span> <b>A new "Concise" output style</b> <span class="d">— Claude Code leads with results and skips preamble and narration, while doing the work just as thoroughly. A quicker read for anyone who just wants the outcome.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Aug 18</div><p><span class="badge surf">Code</span> <b>Weekly Claude Code limit boost extended through August 31</b> <span class="d">— the temporary +50% increase to weekly Claude Code limits on Pro, Max, Team, and Enterprise keeps running a little longer; Anthropic says it hopes to make the boost permanent but capacity may stay tight in the meantime. Announced on X.</span> <a class="src" href="https://x.com/ClaudeDevs/status/2089798442306711646" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 18</div><p><span class="badge surf">Code</span> <b>Claude Code can underline typos as you type</b> <span class="d">— a new optional spellcheck setting underlines misspelled words right in the prompt input, using <code>aspell</code>, <code>hunspell</code>, or <code>ispell</code> if you have one installed.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Aug 17</div><p><span class="badge surf">Code</span> <b>Claude Code auto-continues stalled sessions when your usage limit resets</b> <span class="d">— hit a usage limit mid-task and Claude Code can now pick a stalled session back up the moment your limit window resets, instead of you needing to remember to come back and re-prompt it. Turn it on from <code>/config</code>.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Aug 14</div><p><span class="badge surf">Code</span> <b>Claude Code's live task checklist is now opt-in on the newest models</b> <span class="d">— on Opus 4.8, Sonnet 5, Fable 5, and Mythos 5, Claude Code no longer shows a running todo/task list by default while it works. If you rely on watching that checklist, set the environment variable <code>CLAUDE_CODE_ENABLE_TODO_TOOLS=1</code> to bring it back.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Aug 13</div><p><span class="badge surf">Code</span> <b>Subagents now fork and run in the background by default</b> <span class="d">— spawning another agent in an interactive session no longer blocks your work; it runs in the background automatically. A new fork option lets a subagent inherit the full conversation and prompt cache instead of starting from scratch.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -304,8 +304,8 @@
       <div class="card"><h3>Skills</h3>
         <p>Reusable instruction packs that teach Claude how to do a task your way (brand guidelines, report formats, workflows). Claude loads them automatically when relevant.</p>
         <div class="how"><b>How:</b> Settings → <b>Capabilities → Skills</b>, or ask Claude to create a skill for you. Invoke directly with <code>/skill-name</code>.</div></div>
-      <div class="card"><h3>Memory</h3>
-        <p>Claude remembers key details across conversations — your role, preferences, ongoing work — so you don't repeat yourself. You can view and edit everything it remembers.</p>
+      <div class="card"><h3>Memory <span class="badge new">Now shared with Cowork</span></h3>
+        <p>Claude remembers key details across conversations — your role, preferences, ongoing work — so you don't repeat yourself. The same memory now follows you into Cowork, updates live as you chat, and you can view and edit everything it remembers. Sensitive topics (health, beliefs, politics, and similar) are skipped by default.</p>
         <div class="how"><b>How:</b> Settings → <b>Memory</b>. Ask "what do you remember about me?" anytime. Use incognito chats for conversations that should leave no trace.</div></div>
       <div class="card"><h3>Research &amp; Deep Research</h3>
         <p>Claude searches the web (and your connected apps), reads dozens of sources, and writes a cited report. Deep research runs longer for harder questions.</p>
@@ -709,7 +709,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 22, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated August 26, 2026</p>
 </footer>
 
 <script>
