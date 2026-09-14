@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>September 12, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>September 14, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,16 +278,16 @@
     <h2>What's new <span class="badge new">September 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Markdown artifacts get a real document look</b> <span class="d">— when Claude publishes a Markdown file as an artifact, it now renders as a styled document page instead of raw text, so shared write-ups and reports are much easier to read.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Fast mode reaches cloud &amp; self-hosted sessions</b> <span class="d">— fast mode (same intelligence tier, quicker output) now works in Claude Code Remote sessions, both cloud-hosted and self-hosted runners, not just local ones.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Watch up to 10 artifacts at once</b> <span class="d">— a session can now watch up to 10 published artifacts at the same time, double the previous limit, so Claude can notice updates across more of your pages.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b><code>/mobile</code> shows one QR code</b> <span class="d">— the command used to clutter the screen with more than you needed; it now shows a single QR code to jump straight into the mobile app.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 12</div><p><span class="badge surf">Code</span> <b>Fixed spurious permission prompts for read-only git commands</b> <span class="d">— a regression from the previous release could make Claude Code ask permission again for safe, read-only git commands (like <code>git status</code> or <code>git log</code>) after a session had been running for a while; that's now fixed.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 11</div><p><span class="badge surf">Code</span> <b>Switch output styles from anywhere</b> <span class="d">— the new <code>/output-style [name]</code> command lists and switches your output style (Concise, Explanatory, custom…) from Remote Control and headless sessions too, not just the interactive CLI.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 11</div><p><span class="badge surf">Code</span> <b>Bash-driven edits show a diff too</b> <span class="d">— when Claude edits a file through a Bash command instead of the Edit tool, you now get the same file diff you'd see otherwise, so nothing slips by unreviewed.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 10</div><p><span class="badge surf">Code</span> <b>Published artifacts get their own browser-tab icon</b> <span class="d">— when Claude publishes an artifact, it now picks a small icon to match the page's subject, so your open artifact tabs are easier to tell apart at a glance.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 9</div><p><span class="badge surf">Admin</span> <b>Admins can cap how hard Claude thinks, org-wide</b> <span class="d">— a new <code>maxEffortLevel</code> setting limits the effort level Claude runs at across every provider, including Bedrock, Vertex, and Foundry; people can still pick something lower.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 9</div><p><span class="badge surf">Code</span> <b>Fixed blank command output on mobile</b> <span class="d">— <code>/context</code> and other local commands were rendering blank on mobile clients; they now show their output correctly.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 8</div><p><span class="badge surf">Code</span> <b>Artifacts flag hidden instructions when Claude reads one you didn't write</b> <span class="d">— when Claude summarizes an artifact someone else published, it now treats the page as untrusted content and calls out any embedded instructions it finds instead of quietly following them, a safeguard against prompt injection hidden in shared pages.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 4</div><p><span class="badge surf">Code</span> <b>/skill-doctor flags the skills quietly eating your context</b> <span class="d">— a new command lists every loaded skill you aren't using along with how much context budget each one costs, so you can trim what's not pulling its weight.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 3</div><p><span class="badge surf">Code</span> <b>/diff gets a live fullscreen panel</b> <span class="d">— in fullscreen mode, a diff panel now shows your uncommitted changes updating in place as Claude edits, instead of only the final result.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 3</div><p><span class="badge surf">Code</span> <b>Fixed Fable 5.1 missing from the model picker</b> <span class="d">— some eligible organizations couldn't select the newly-launched Fable 5.1 in <code>/model</code>; it now shows up correctly.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -316,7 +316,7 @@
       <div class="card"><h3>Extended thinking</h3>
         <p>Lets Claude reason step-by-step before answering — dramatically better for math, code, and tricky logic. Sonnet 5 adapts its thinking depth automatically.</p>
         <div class="how"><b>How:</b> Toggle <b>thinking</b> in the chat box's tools menu (where available), or ask Claude to "think carefully step by step."</div></div>
-      <div class="card"><h3>Voice mode <span class="badge new">Opus &amp; Sonnet</span></h3>
+      <div class="card"><h3>Voice mode</h3>
         <p>Talk with Claude hands-free on desktop, mobile, and web. Switch to Sonnet or Opus mid-conversation for deeper answers, or stay on Haiku for quick back-and-forth — it can also draw on connected apps like Gmail and Slack.</p>
         <div class="how"><b>How:</b> Tap the <b>voice</b> icon next to the chat box, then pick a model from the switcher mid-conversation.</div></div>
       <div class="card"><h3>Styles</h3>
@@ -325,7 +325,7 @@
       <div class="card"><h3>File uploads &amp; data analysis</h3>
         <p>Drop in PDFs, images, screenshots, or spreadsheets. Claude reads them, and its analysis tool can run real code to crunch CSVs and chart the results.</p>
         <div class="how"><b>How:</b> Drag files into the chat box (or paste a screenshot). For spreadsheets, ask for specific charts or trends.</div></div>
-      <div class="card"><h3>Claude Design <span class="badge new">2026</span></h3>
+      <div class="card"><h3>Claude Design</h3>
         <p>A dedicated mode for visual work — generate polished designs, mockups, and prototypes you can iterate on conversationally.</p>
         <div class="how"><b>How:</b> Look for <b>Design</b> in the tools menu, or ask Claude to design a screen/poster/prototype.</div></div>
       <div class="card"><h3>Chat search &amp; history</h3>
@@ -338,10 +338,10 @@
     <h2><span class="slashtag">/cowork</span> Cowork &amp; automation</h2>
     <p class="lead">Claude doesn't just chat anymore — it works alongside you and keeps going when you step away.</p>
     <div class="grid">
-      <div class="card"><h3>Cowork <span class="badge new">Now on web &amp; mobile</span></h3>
+      <div class="card"><h3>Cowork</h3>
         <p>Give Claude a folder and a goal; it works through real files — organizing, drafting, building spreadsheets — checking in as it goes. Sessions now follow you across desktop, web, and mobile.</p>
         <div class="how"><b>How:</b> Open <b>Cowork</b> in the Claude app, point it at a folder, describe the outcome you want. Approve steps from your phone.</div></div>
-      <div class="card"><h3>Record a skill <span class="badge new">New</span></h3>
+      <div class="card"><h3>Record a skill</h3>
         <p>Teach Claude a skill by showing it: record your screen while you do a task and talk through it as you go, and Claude turns the walkthrough into a reusable skill it can run again.</p>
         <div class="how"><b>How:</b> In the Claude desktop app, open the <b>+</b> menu and choose <b>Record a skill</b>. Pro, Max, and Team plans.</div></div>
       <div class="card"><h3>Scheduled tasks</h3>
@@ -579,13 +579,13 @@
     <h2><span class="slashtag">/apps</span> Apps &amp; surfaces</h2>
     <p class="lead">Claude lives in more places than most people realize.</p>
     <div class="grid">
-      <div class="card"><h3>Desktop app <span class="badge new">Linux beta</span></h3>
+      <div class="card"><h3>Desktop app</h3>
         <p>Mac, Windows, and now Linux (beta). Includes Cowork, Claude Code with an in-app browser, and global keyboard access to Claude from anywhere.</p>
         <div class="how"><b>How:</b> Download at claude.ai/download.</div></div>
       <div class="card"><h3>Mobile apps</h3>
         <p>iOS &amp; Android: voice mode, camera input, Cowork sessions, push notifications when background work finishes, and approvals on the go.</p>
         <div class="how"><b>How:</b> App Store / Play Store → "Claude by Anthropic".</div></div>
-      <div class="card"><h3>Claude in Chrome <span class="badge new">GA</span></h3>
+      <div class="card"><h3>Claude in Chrome</h3>
         <p>A browser extension that lets Claude see and act on web pages — fill forms, navigate sites, automate multi-step web tasks — with site-level permissions you control.</p>
         <div class="how"><b>How:</b> Install from the Chrome Web Store; grant access per-site. Available on all direct Anthropic plans.</div></div>
       <div class="card"><h3>Claude Code on the web</h3>
@@ -610,7 +610,7 @@
       <div class="card"><h3>Turn on (and curate) memory</h3>
         <p>Memory makes every conversation smarter — and it's fully inspectable. Review what Claude knows and delete anything you'd rather it forget.</p>
         <div class="how"><b>How:</b> Settings → Memory → view/edit. Per-project memory keeps work contexts separate.</div></div>
-      <div class="card"><h3>Quiet hours &amp; break reminders <span class="badge new">New</span></h3>
+      <div class="card"><h3>Quiet hours &amp; break reminders</h3>
         <p>Part of Claude Reflect: set hours when Claude won't notify you, and get gentle reminders during long sessions.</p>
         <div class="how"><b>How:</b> Settings → Reflect / Notifications.</div></div>
       <div class="card"><h3>Connect your tools</h3>
@@ -711,7 +711,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 12, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 14, 2026</p>
 </footer>
 
 <script>
