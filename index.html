@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>September 15, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>September 16, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,8 @@
     <h2>What's new <span class="badge new">September 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Sep 16</div><p><span class="badge surf">App</span> <b>Claude Docs and Claude Slides launch in beta</b> <span class="d">— ask Claude to draft a document or a slide deck and it hands back an editable file: Docs supports comments and multiplayer editing with export to Word or Google Docs, Slides can be presented straight from the chat or downloaded as PowerPoint or PDF. Rolling out to Pro and Max first.</span> <a class="src" href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 16</div><p><span class="badge surf">App</span> <b>Chat, Cowork, and Artifacts merge into one window</b> <span class="d">— on web, desktop, and mobile there's no more mode to pick: describe what you need and Claude decides whether to answer directly or take on bigger work like research, spreadsheets, and presentations, handing it back as finished, editable files. Team and Free plans get it later.</span> <a class="src" href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 15</div><p><span class="badge surf">Code</span> <b>Fork a remote session right from the Claude app</b> <span class="d">— a session you started with <code>claude --remote-control</code> or <code>/remote-control</code> can now be forked from the Claude app; the fork keeps going as a background session on your computer.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 15</div><p><span class="badge surf">Code</span> <b>Fixed auto-compact triggering way too early</b> <span class="d">— a bug made Claude Code count some tool turns at roughly double their real size, so the context meter filled up fast and auto-compact kicked in at about half the real window. Long sessions should now run notably longer before compacting.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 15</div><p><span class="badge surf">Code</span> <b>You're told when an MCP connection drops</b> <span class="d">— if an MCP server disconnects mid-session and Claude Code can't automatically reconnect it, you now get a clear notification pointing you at <code>/mcp</code> to fix it, instead of things silently failing.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Watch up to 10 artifacts at once</b> <span class="d">— a session can now watch up to 10 published artifacts at the same time, double the previous limit, so Claude can notice updates across more of your pages.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b><code>/mobile</code> shows one QR code</b> <span class="d">— the command used to clutter the screen with more than you needed; it now shows a single QR code to jump straight into the mobile app.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 12</div><p><span class="badge surf">Code</span> <b>Fixed spurious permission prompts for read-only git commands</b> <span class="d">— a regression from the previous release could make Claude Code ask permission again for safe, read-only git commands (like <code>git status</code> or <code>git log</code>) after a session had been running for a while; that's now fixed.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 11</div><p><span class="badge surf">Code</span> <b>Switch output styles from anywhere</b> <span class="d">— the new <code>/output-style [name]</code> command lists and switches your output style (Concise, Explanatory, custom…) from Remote Control and headless sessions too, not just the interactive CLI.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 11</div><p><span class="badge surf">Code</span> <b>Bash-driven edits show a diff too</b> <span class="d">— when Claude edits a file through a Bash command instead of the Edit tool, you now get the same file diff you'd see otherwise, so nothing slips by unreviewed.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -326,8 +326,14 @@
         <p>Drop in PDFs, images, screenshots, or spreadsheets. Claude reads them, and its analysis tool can run real code to crunch CSVs and chart the results.</p>
         <div class="how"><b>How:</b> Drag files into the chat box (or paste a screenshot). For spreadsheets, ask for specific charts or trends.</div></div>
       <div class="card"><h3>Claude Design</h3>
-        <p>A dedicated mode for visual work — generate polished designs, mockups, and prototypes you can iterate on conversationally.</p>
+        <p>Visual work — generate polished designs, mockups, and prototypes you can iterate on conversationally. As chat, Cowork, and Artifacts merge into one window, Design is moving into regular conversations instead of a separate mode.</p>
         <div class="how"><b>How:</b> Look for <b>Design</b> in the tools menu, or ask Claude to design a screen/poster/prototype.</div></div>
+      <div class="card"><h3>Claude Docs <span class="badge new">New</span></h3>
+        <p>Ask Claude to draft a document and it opens as an editable page you keep working on together — Claude writes sections, you comment on specific parts and ask questions, and either of you can revise. Export to Microsoft Word or Google Docs when it's ready.</p>
+        <div class="how"><b>How:</b> Ask Claude to "write up…" a report, memo, or spec. Beta, rolling out to Pro and Max plans first.</div></div>
+      <div class="card"><h3>Claude Slides <span class="badge new">New</span></h3>
+        <p>Ask Claude to build a presentation and it creates an editable deck you can refine slide by slide, present straight from the chat, or download as PowerPoint or PDF.</p>
+        <div class="how"><b>How:</b> Ask Claude to "make a slide deck about…". Beta, rolling out to Pro and Max plans first.</div></div>
       <div class="card"><h3>Chat search &amp; history</h3>
         <p>Every past conversation is searchable — and Claude itself can search your chat history to recall what you discussed weeks ago.</p>
         <div class="how"><b>How:</b> Use the search bar in the sidebar, or ask Claude: "Find our conversation about the marketing plan."</div></div>
@@ -338,9 +344,9 @@
     <h2><span class="slashtag">/cowork</span> Cowork &amp; automation</h2>
     <p class="lead">Claude doesn't just chat anymore — it works alongside you and keeps going when you step away.</p>
     <div class="grid">
-      <div class="card"><h3>Cowork</h3>
-        <p>Give Claude a folder and a goal; it works through real files — organizing, drafting, building spreadsheets — checking in as it goes. Sessions now follow you across desktop, web, and mobile.</p>
-        <div class="how"><b>How:</b> Open <b>Cowork</b> in the Claude app, point it at a folder, describe the outcome you want. Approve steps from your phone.</div></div>
+      <div class="card"><h3>Cowork <span class="badge new">Merging into chat</span></h3>
+        <p>Give Claude a folder and a goal; it works through real files — organizing, drafting, building spreadsheets — checking in as it goes. Cowork is merging into the main Claude window: rather than switching into a separate mode, you describe the task in a normal chat and Claude decides whether to answer directly or take it on as a longer job.</p>
+        <div class="how"><b>How:</b> Open <b>Cowork</b> in the Claude app, point it at a folder, describe the outcome you want. Approve steps from your phone. Rolling out merged into chat on Pro and Max first.</div></div>
       <div class="card"><h3>Record a skill</h3>
         <p>Teach Claude a skill by showing it: record your screen while you do a task and talk through it as you go, and Claude turns the walkthrough into a reusable skill it can run again.</p>
         <div class="how"><b>How:</b> In the Claude desktop app, open the <b>+</b> menu and choose <b>Record a skill</b>. Pro, Max, and Team plans.</div></div>
@@ -693,7 +699,7 @@
     <div class="plans">
       <div class="plan"><h3>Free</h3><ul><li>Chat with Claude</li><li>Artifacts, uploads, search</li><li>Limited daily usage</li></ul></div>
       <div class="plan"><h3>Pro</h3><ul><li>Sonnet 5 by default</li><li>Projects, Research, Skills</li><li>Claude Code + auto mode</li><li>More usage</li></ul></div>
-      <div class="plan"><h3>Max</h3><ul><li>Everything in Pro, 5–20× usage</li><li>Opus 5 by default &amp; Claude 5 family</li><li>Cowork beta, fast mode</li><li>Priority access to new features</li></ul></div>
+      <div class="plan"><h3>Max</h3><ul><li>Everything in Pro, 5–20× usage</li><li>Opus 5 by default &amp; Claude 5 family</li><li>Cowork, Docs &amp; Slides beta, fast mode</li><li>Priority access to new features</li></ul></div>
       <div class="plan"><h3>Team</h3><ul><li>Shared projects &amp; billing</li><li>Claude Tag for Slack</li><li>Central admin controls</li></ul></div>
       <div class="plan"><h3>Enterprise</h3><ul><li>SSO, roles, compliance API</li><li>Model entitlements</li><li>Trusted Devices, HIPAA setup</li></ul></div>
     </div>
@@ -711,7 +717,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 15, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 16, 2026</p>
 </footer>
 
 <script>
