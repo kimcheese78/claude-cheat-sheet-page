@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>September 17, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>September 18, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -278,6 +278,8 @@
     <h2>What's new <span class="badge new">September 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Sep 18</div><p><span class="badge surf">Code</span> <b>Claude Code now reads AGENTS.md too</b> <span class="d">— a project without a CLAUDE.md but with an AGENTS.md (the emerging cross-tool convention for agent instructions) now gets it read automatically at session start.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 17</div><p><span class="badge surf">Code</span> <b>Claude Code Projects relaunches with parallel cloud threads</b> <span class="d">— one ongoing conversation now coordinates a stream of related work: send in a bug report or task list and Claude starts a cloud session for each piece, running in parallel on its own branch and sharing repositories, instructions, and memory. Public beta on Pro and Max, rolling out gradually.</span> <a class="src" href="https://code.claude.com/docs/en/claude-projects" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 17</div><p><span class="badge surf">Code</span> <b>New "send now" key interrupts and flushes your queue</b> <span class="d">— <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd>) stops Claude's current turn and immediately sends every message you'd queued up, instead of waiting for them to send one by one.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 17</div><p><span class="badge surf">Code</span> <b>Skills and plugins you enable on claude.ai now sync to the terminal</b> <span class="d">— whatever's turned on in your claude.ai account carries over into terminal sessions automatically; opt out per-type with <code>syncClaudeAiSkills: false</code> or <code>syncClaudeAiPlugins: false</code> in settings. <code>/plugin install &lt;plugin&gt; --marketplace &lt;source&gt;</code> also now offers to add the marketplace for you if it isn't set up yet.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 16</div><p><span class="badge surf">App</span> <b>Claude Docs and Claude Slides launch in beta</b> <span class="d">— ask Claude to draft a document or a slide deck and it hands back an editable file: Docs supports comments and multiplayer editing with export to Word or Google Docs, Slides can be presented straight from the chat or downloaded as PowerPoint or PDF. Rolling out to Pro and Max first.</span> <a class="src" href="https://support.claude.com/en/articles/12138966-release-notes" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Sep 15</div><p><span class="badge surf">Code</span> <b>Fixed auto-compact triggering way too early</b> <span class="d">— a bug made Claude Code count some tool turns at roughly double their real size, so the context meter filled up fast and auto-compact kicked in at about half the real window. Long sessions should now run notably longer before compacting.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 15</div><p><span class="badge surf">Code</span> <b>You're told when an MCP connection drops</b> <span class="d">— if an MCP server disconnects mid-session and Claude Code can't automatically reconnect it, you now get a clear notification pointing you at <code>/mcp</code> to fix it, instead of things silently failing.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Markdown artifacts get a real document look</b> <span class="d">— when Claude publishes a Markdown file as an artifact, it now renders as a styled document page instead of raw text, so shared write-ups and reports are much easier to read.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Fast mode reaches cloud &amp; self-hosted sessions</b> <span class="d">— fast mode (same intelligence tier, quicker output) now works in Claude Code Remote sessions, both cloud-hosted and self-hosted runners, not just local ones.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 14</div><p><span class="badge surf">Code</span> <b>Watch up to 10 artifacts at once</b> <span class="d">— a session can now watch up to 10 published artifacts at the same time, double the previous limit, so Claude can notice updates across more of your pages.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -371,7 +371,7 @@
         <p>Install once, then run <code>claude</code> in any project folder. Available in terminal, Desktop app, VS Code/JetBrains, and on the web at claude.ai/code.</p>
         <div class="how"><b>How:</b> <code>curl -fsSL https://claude.ai/install.sh | bash</code> (or <code>npm install -g @anthropic-ai/claude-code</code>), then run <code>claude</code> in a project. <code>/init</code> generates a CLAUDE.md project guide.</div></div>
       <div class="card"><h3>CLAUDE.md — project memory</h3>
-        <p>A markdown file Claude reads at the start of every session: build commands, conventions, warnings. The single highest-leverage customization.</p>
+        <p>A markdown file Claude reads at the start of every session: build commands, conventions, warnings. The single highest-leverage customization. No CLAUDE.md yet? Claude Code now also reads an existing <code>AGENTS.md</code> automatically.</p>
         <div class="how"><b>How:</b> <code>/init</code> creates one. Press <code>#</code> during a session to quickly save a note to memory. Edit anytime with <code>/memory</code>.</div></div>
       <div class="card"><h3>Auto mode <span class="badge new">Default now</span></h3>
         <p>The middle ground between approving every action and skipping all permissions: a safety classifier lets safe actions run uninterrupted and blocks risky ones. As of August 14, it's the default for new sessions on Pro, Max, and Team.</p>
@@ -388,6 +388,9 @@
       <div class="card"><h3>Cloud power: code review &amp; Routines</h3>
         <p>Launch a fleet of bug-hunting review agents on your branch, or fire scheduled cloud agents from claude.ai/code on a timer, GitHub event, or API call.</p>
         <div class="how"><b>How:</b> <code>/code-review ultra</code> for the multi-agent cloud review; Routines on claude.ai/code fire scheduled cloud agents.</div></div>
+      <div class="card"><h3>Claude Code Projects <span class="badge new">Beta</span></h3>
+        <p>One ongoing conversation coordinates a stream of related work: send in a bug report or task list and Claude starts a cloud session (a "thread") for each piece, running in parallel with the others on its own branch, sharing repositories, instructions, and memory.</p>
+        <div class="how"><b>How:</b> Look for <b>Projects</b> at claude.ai/code or in the desktop app's Code tab. Public beta on Pro and Max, rolling out gradually — join the waitlist if it hasn't reached you yet.</div></div>
       <div class="card"><h3>Keyboard power moves <span class="badge tip">Pro tip</span></h3>
         <p><kbd>Esc</kbd> interrupts Claude mid-task. Double-<kbd>Esc</kbd> rewinds to edit an earlier message. <kbd>Shift</kbd>+<kbd>Tab</kbd> cycles permission modes (including plan mode).</p>
         <div class="how"><b>How:</b> Customize everything in <code>/keybindings</code>. Vim fan? <code>/vim</code>.</div></div>
@@ -718,7 +721,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 17, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 18, 2026</p>
 </footer>
 
 <script>
