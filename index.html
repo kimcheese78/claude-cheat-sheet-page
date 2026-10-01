@@ -250,7 +250,7 @@
   <span class="slashtag">~/claude-cheat-sheet · updated daily<span class="caret"></span></span>
   <h1>Claude Cheat Sheet <span class="h1-note">(updated daily)</span></h1>
   <p class="sub">Every useful Claude feature on one friendly page — the famous ones and the hidden gems, commands, settings, connectors, shortcuts — without digging through docs or waiting for a friend to mention them.</p>
-  <p class="stamp">Last updated <b>September 29, 2026</b> from Anthropic's official channels</p>
+  <p class="stamp">Last updated <b>October 1, 2026</b> from Anthropic's official channels</p>
 </header>
 
 <div class="topbar">
@@ -275,9 +275,11 @@
 
 <main>
   <section id="whats-new">
-    <h2>What's new <span class="badge new">September 2026</span></h2>
+    <h2>What's new <span class="badge new">October 2026</span></h2>
     <p class="lead">The latest features, straight from Anthropic's release notes. This section refreshes every day.</p>
     <div class="whatsnew">
+      <div class="wn-item"><div class="wn-date">Oct 1</div><p><span class="badge surf">Code</span> <b>Claude Mods: plugins can now reach into Claude Code's own behavior</b> <span class="d">— a mod is a plugin built from JavaScript/TypeScript hooks that watches, changes, or takes over a Claude Code event: rewrite prompts before they reach the model, auto-approve or block tool calls, redact secrets from tool output, or swap in a custom pane or button. Several built-in pieces (the <code>/diff</code> pane, the AGENTS.md loader, telemetry) now run as mods themselves. Try the built-in "You should know" mod, a side agent that flags things you or Claude might miss, with <code>/plugin enable cc-plugin-you-should-know@builtin</code>.</span> <a class="src" href="https://claude.com/blog/claude-code-mods" rel="noopener">source ↗</a></p></div>
+      <div class="wn-item"><div class="wn-date">Sep 30</div><p><span class="badge surf">Admin</span> <b>Claude for Government reaches general availability</b> <span class="d">— federal and state agencies get Claude through a FedRAMP High authorized environment, out of the public beta that began in July. No seat fees; agencies buy usage in fixed increments under a hard spending cap. Includes admin controls with audit logs and identity-provider integration, with Claude Code and Claude for Microsoft 365 rolling out in early access in the same environment.</span> <a class="src" href="https://claude.com/blog/claude-for-government-is-now-generally-available" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 29</div><p><span class="badge surf">Code</span> <b>New <code>claude --desktop</code> flag opens the Desktop app from your terminal</b> <span class="d">— run it in any project folder to open the Claude Desktop app there without starting a CLI session first; add <code>--continue</code> or <code>--resume &lt;id&gt;</code> to jump straight into a specific past session.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 28</div><p><span class="badge surf">Models</span> <b>Claude Sonnet 5.5 launches — the second Claude 5.5 model</b> <span class="d">— a clear upgrade over Sonnet 5 at the same price: runs over 30% faster and can cut total task cost by up to 30% by using fewer tokens and tool calls. Scores 70.6% on the Terminal-Bench 4.0 coding benchmark, up from Sonnet 5's 10.3%. It's now the default Sonnet model on the Claude API, with the same 1M-token context window. Haiku 5.5 is coming in the following weeks.</span> <a class="src" href="https://www.anthropic.com/claude-sonnet-5-5" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 25</div><p><span class="badge surf">Connectors</span> <b>Plugin developer portal opens</b> <span class="d">— creators can now submit plugins to the Claude directory themselves at claude.ai/directory/manage/new, as a single MCP connector or a bundle (MCP servers + skills) hosted on GitHub. Submissions get an automatic safety scan, a review-status tracker, and post-launch analytics on installs and search traffic. Open to developers on paid plans.</span> <a class="src" href="https://claude.com/blog/build-plugins-for-claude" rel="noopener">source ↗</a></p></div>
@@ -286,8 +288,6 @@
       <div class="wn-item"><div class="wn-date">Sep 22</div><p><span class="badge surf">Models</span> <b>Claude Opus 5.5 launches — the first Claude 5.5 model</b> <span class="d">— matches Fable 5.1's capability on most work while costing 40% less to run than Opus 5 and generating output over 30% faster; it's now the default Opus model in Claude Code, with a 1M-token context window. Pro, Max, Team, and seat-based Enterprise plans also lose their 5-hour usage cap, replaced by a rate-limit reset you can save and use whenever you choose. Sonnet 5.5 and Haiku 5.5 are coming in the following weeks.</span> <a class="src" href="https://www.anthropic.com/claude-opus-5-5" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 19</div><p><span class="badge surf">Code</span> <b>Auto mode's safety checks stop costing extra for API and Enterprise accounts</b> <span class="d">— on the Claude API, Enterprise plans, and Bedrock, Vertex, or Foundry, the background checks that let auto mode skip permission prompts now run server-side by default instead of billing as separate model requests. <code>/status</code> gets a new "Auto mode server" row showing whether yours does.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
       <div class="wn-item"><div class="wn-date">Sep 18</div><p><span class="badge surf">Code</span> <b>Claude Code now reads AGENTS.md too</b> <span class="d">— a project without a CLAUDE.md but with an AGENTS.md (the emerging cross-tool convention for agent instructions) now gets it read automatically at session start.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 17</div><p><span class="badge surf">Code</span> <b>Claude Code Projects relaunches with parallel cloud threads</b> <span class="d">— one ongoing conversation now coordinates a stream of related work: send in a bug report or task list and Claude starts a cloud session for each piece, running in parallel on its own branch and sharing repositories, instructions, and memory. Public beta on Pro and Max, rolling out gradually.</span> <a class="src" href="https://code.claude.com/docs/en/claude-projects" rel="noopener">source ↗</a></p></div>
-      <div class="wn-item"><div class="wn-date">Sep 17</div><p><span class="badge surf">Code</span> <b>New "send now" key interrupts and flushes your queue</b> <span class="d">— <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd>) stops Claude's current turn and immediately sends every message you'd queued up, instead of waiting for them to send one by one.</span> <a class="src" href="https://code.claude.com/docs/en/changelog" rel="noopener">source ↗</a></p></div>
     </div>
   </section>
 
@@ -382,9 +382,9 @@
       <div class="card"><h3>Subagents &amp; background sessions</h3>
         <p>Claude can spawn specialized agents that now run in the background by default (they can even spawn their own, and can fork to inherit your conversation instead of starting fresh). Your session keeps moving while they work, and you can @-mention another session by name to message it directly.</p>
         <div class="how"><b>How:</b> <code>/agents</code> to create custom agents; <code>claude agents</code> shows every session — running, blocked, done. Type <code>@</code> to mention a session by name, or use the <code>SendMessage</code>/<code>ListAgents</code> tools (macOS/Linux).</div></div>
-      <div class="card"><h3>Hooks, MCP &amp; plugins</h3>
-        <p>Deep customization: hooks run your scripts on tool events, MCP servers connect external tools, plugins bundle it all for your team. Skills and plugins you've enabled on claude.ai now sync into your terminal sessions automatically.</p>
-        <div class="how"><b>How:</b> <code>/hooks</code>, <code>/mcp</code> (or <code>claude mcp login</code> from your shell), <code>/plugin</code> to browse &amp; install plugins. Opt out of syncing with <code>syncClaudeAiSkills: false</code> / <code>syncClaudeAiPlugins: false</code> in settings.</div></div>
+      <div class="card"><h3>Hooks, MCP, plugins &amp; mods <span class="badge new">Mods</span></h3>
+        <p>Deep customization: hooks run your scripts on tool events, MCP servers connect external tools, plugins bundle it all for your team, and mods (plugins built from JS/TypeScript hooks) can rewrite Claude Code's own prompts, tool permissions, and interface. Skills and plugins you've enabled on claude.ai now sync into your terminal sessions automatically.</p>
+        <div class="how"><b>How:</b> <code>/hooks</code>, <code>/mcp</code> (or <code>claude mcp login</code> from your shell), <code>/plugin</code> to browse &amp; install plugins or mods. Opt out of syncing with <code>syncClaudeAiSkills: false</code> / <code>syncClaudeAiPlugins: false</code> in settings.</div></div>
       <div class="card"><h3>Cloud power: code review &amp; Routines</h3>
         <p>Launch a fleet of bug-hunting review agents on your branch, or fire scheduled cloud agents from claude.ai/code on a timer, GitHub event, or API call.</p>
         <div class="how"><b>How:</b> <code>/code-review ultra</code> for the multi-agent cloud review; Routines on claude.ai/code fire scheduled cloud agents.</div></div>
@@ -722,7 +722,7 @@
     <li>@claudeai announcements on X (first-party posts only)</li>
   </ul>
   <p>Community tips adapted from public write-ups including Tuncer Bağçabaşı's "40 Hidden Claude Features", Hannah Stulberg's "30 Claude Code Tips &amp; Tricks", and Superdev Academy's 2026 Claude guide.</p>
-  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated September 29, 2026</p>
+  <p>Unofficial community cheat sheet · not affiliated with Anthropic · Last updated October 1, 2026</p>
 </footer>
 
 <script>
